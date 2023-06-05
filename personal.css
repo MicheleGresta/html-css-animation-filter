@@ -47,3 +47,232 @@
     width: 40px;
     height: 40px;
 }
+
+/* Esercizio 6 */
+.ex-6-img:hover{
+    filter: grayscale(100%);
+}
+
+/* Esercizio 7 */
+.ex-7-img:hover{
+    filter: grayscale(80%);
+}
+.ex-7-img:active{
+    filter: grayscale(80%);
+    border-radius: 50%;
+}
+.ex-7-img{
+    width: 100px;
+    height: 100px;
+}
+
+/* Esercizio 8 */
+@keyframes es-8-active{
+    0% { filter: blur(0px);
+        border-radius: 0%;
+
+    }
+    100% { filter: blur(30px);
+        border-radius: 20px;
+    }
+}
+@keyframes es-8-hover{
+    from { filter: grayscale(0%);}
+    to { filter: grayscale(100%)}
+}
+.ex-8-img:hover{
+    animation-name: es-8-hover;
+    animation-duration: 2s;
+}
+.ex-8-img:active{
+    animation-name: es-8-active;
+    animation-duration: 2s;
+}
+
+/* Esercizio 9 */
+@keyframes es-9-hover{
+    0%{ filter: grayscale(0%);
+        filter: blur(0%);
+    }
+    20% { filter: grayscale(80%);
+        filter: blur(50%);
+    }
+    100% { filter: grayscale(80%);
+        filter: blur(50%);
+    }
+}
+
+.ex-9-img{
+    animation-name: es-9-hover;
+    animation-duration: 10s;
+    width: 500px;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+.well .ex-9-img{
+    display: block;
+    
+}
+
+/* Esercizio 10 */
+@keyframes es10{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.ex-10-icon{
+    animation-name: es10;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+/* Esercizio 11 */
+@keyframes es11{
+    0% {transform: rotate(0deg);}
+    90% {transform: rotate(270deg);}
+    100% {transform: rotate(0deg);}
+}
+.ex-11-icon{
+    animation-name: es11;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* Esercizio 12 */
+@keyframes es12-13-primo-div {
+    0% { 
+        top:-10px;
+        left: 10%;        
+    }
+    20% {
+        top:-10px;
+        left: 100%;
+    }
+    40% {
+        top: 50px;
+        left: 100%;
+    }
+    60% {
+        top: 50px;
+        left: -10%;
+    }
+    85% {
+        top:-10px; 
+        left: -10%;
+    }
+    100%{
+        top:-10px;
+        left: 10%;
+    }
+
+}
+.ex-12-top-white{
+    animation-name: es12-13-primo-div;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes es12-13-secondo-div {
+    0% { 
+        bottom:-10px;
+        right: 20%;        
+    }
+    20% {
+        bottom:-10px;
+        right: 75%;   
+    }
+    40% {
+        bottom:50px;
+        right: 75%;   
+    }
+    60% {
+        bottom:50px;
+        right: -20%;   
+    }
+    85% {
+        bottom:-10px;
+        right: -20%;   
+    }
+    100%{
+        bottom:-10px;
+        right: 20%;   
+    }
+
+}
+.ex-12-bottom-white{
+    animation-name: es12-13-secondo-div;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* Esercizio 13 */
+@keyframes es12-13-primo-div {
+    0% { 
+        top:-10px;
+        left: 10%;        
+    }
+    20% {
+        top:-10px;
+        left: 100%;
+    }
+    40% {
+        top: 50px;
+        left: 100%;
+    }
+    60% {
+        top: 50px;
+        left: -10%;
+    }
+    85% {
+        top:-10px; 
+        left: -10%;
+    }
+    100%{
+        top:-10px;
+        left: 10%;
+    }
+
+}
+.ex-13-top-white{
+    animation-name: es12-13-primo-div;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes es12-13-secondo-div {
+    0% { 
+        bottom:-10px;
+        right: 20%;        
+    }
+    20% {
+        bottom:-10px;
+        right: 75%;   
+    }
+    40% {
+        bottom:50px;
+        right: 75%;   
+    }
+    60% {
+        bottom:50px;
+        right: -20%;   
+    }
+    85% {
+        bottom:-10px;
+        right: -20%;   
+    }
+    100%{
+        bottom:-10px;
+        right: 20%;   
+    }
+
+}
+.ex-13-bottom-white{
+    animation-name: es12-13-secondo-div;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
