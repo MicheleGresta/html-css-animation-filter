@@ -1,0 +1,49 @@
+/* Esercizio 1 */
+@keyframes es1 {
+    from {background-color: transparent}
+    to {background-color: red;;}
+}
+.ex-1-square:hover{
+    animation-duration: 2s;
+    animation-name: es1;
+}
+
+/* Esercizio 2 */
+@keyframes  es2 {
+    from { width:100px;}
+    to  { width:100%}
+}
+.ex-2-square:active{
+    animation-name: es2;
+    animation-duration: 2s;
+}
+
+/* Esercizio 3 */
+@keyframes es3 {
+    0% { border-radius: 0%;}
+    100% {border-radius: 50%;}
+}
+.ex-3-square:hover{
+    animation-name: es3;
+    animation-duration: 3s;
+}
+
+/* Esercizio 4 */
+@keyframes es4 {
+    0% { background-color: red;}
+    100% {background-color: rgba(255, 0, 0, 0);}
+}
+.ex-4-square:hover{
+    animation-name: es4;
+    animation-duration: 4s;
+}
+
+/* Esercizio 5 */
+.ex-5-square:hover{
+    width: 80px;
+    height: 80px;
+}
+.ex-5-square:active{
+    width: 40px;
+    height: 40px;
+}
